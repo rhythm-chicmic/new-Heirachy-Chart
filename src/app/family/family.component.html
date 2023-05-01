@@ -34,7 +34,7 @@
             }
         ]"
         [cursorItem]=0
-        [hasSelectorCheckbox]=Enabled.True
+        
         [centerOnCursor]=true>
     </fam-diagram>
 </div>
@@ -44,7 +44,7 @@
     </div>
 </ng-template>
 
-<ng-template #contactTemplate let-itemConfig="context" let-isCursor="isCursor">
+<ng-template #contactTemplate let-itemConfig="context">
     <mat-card class="example-card">
         <mat-card-title-group>
             <mat-card-title>{{itemConfig.title}}</mat-card-title>
@@ -52,11 +52,11 @@
         <mat-card-content>
             {{itemConfig.description}}
         </mat-card-content>
-        <ng-container *ngIf="isCursor">
+        <!-- <ng-container *ngIf="isCursor">
             <mat-card-footer>
                 <mat-progress-bar mode="determinate" value="100"></mat-progress-bar>
             </mat-card-footer>
-        </ng-container>
+        </ng-container> -->
     </mat-card>
 </ng-template>
 <ng-template #contactCursorTemplate let-itemConfig="context">
