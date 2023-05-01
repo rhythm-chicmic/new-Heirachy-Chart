@@ -4,9 +4,9 @@
 
 <p>
     <span>Select template size: &nbsp;</span>
-    <mat-radio-group name="templateName" [(ngModel)]="templateName" (change)="onChange($event)" aria-label="Select an option">
+    <!-- <mat-radio-group name="templateName" [(ngModel)]="templateName" (change)="onChange($event)" aria-label="Select an option">
         <mat-radio-button *ngFor="let item of scales" [value]="item.defaultTemplateName">{{item.caption}}</mat-radio-button>
-    </mat-radio-group>
+    </mat-radio-group> -->
 </p>
 <div class="sample" >
    <ng-container  >
@@ -15,13 +15,16 @@
     [defaultTemplateName] = "defaultTemplateName"
     [normalLevelShift] = "normalLevelShift"
     [normalItemsInterval] = "normalItemsInterval"
-    [pageFitMode]=PageFitMode.AutoSize
+    [pageFitMode]=5
     [minimumVisibleLevels]="2"
     [normalLevelShift]="10"
     [maximumColumnsInMatrix]="6"
+    [minimumScale]=0.5
+    (onButtonClick)="val($event)"
 
     [linesColor]="'SpringGreen'"
     [cursorItem]=0
+    [verticalAlignment]=1
    
     [hasSelectorCheckbox]=Enabled.False
 

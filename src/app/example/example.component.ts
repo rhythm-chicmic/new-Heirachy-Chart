@@ -45,7 +45,7 @@ export class ExampleComponent {
     }
   ];
 
-  defaultTemplateName = "md";
+  defaultTemplateName = "xs";
   normalLevelShift = 30;
   normalItemsInterval = 20;
 
@@ -69,6 +69,18 @@ export class ExampleComponent {
     new OrgItemConfig({ id: 9, parent: 3, isVisible: true, description: "GM, Software Server Solutions Group", context: { email: "abbilaws@name.com", phone: "530-322-6413" }, image: "./assets/photos/a.png", itemTitleColor: "#4b0082", title: "Abbie Lawson" }),
     new OrgItemConfig({ id: 10, parent: 3, isVisible: true, description: "GM, Connected Systems Division", context: { email: "erneputn@name.com", phone: "(626) 831-0555" }, image: "./assets/photos/s.png", itemTitleColor: "#4b0082", title: "Ernest Putnam" }),
     new OrgItemConfig({ id: 11, parent: 4, isVisible: true, description: "CFO, Platforms Products & Services", context: { email: "celecrum@name.com", phone: "(419) 578-6479" }, image: "./assets/photos/h.png", itemTitleColor: "#4b0082", title: "Celestina Crum" }),
-    new OrgItemConfig({ id: 12, parent: 4, isVisible: true, description: "GM, Pricing", context: { email: "cindturn@name.com", phone: "(530) 934-4295"}, image: "./assets/photos/j.png", itemTitleColor: "#4b0082", title: "Cindy Turner" })
+    new OrgItemConfig({ id: 12, parent: 4, isVisible: true, description: "GM, Pricing", context: { email: "cindturn@name.com", phone: "(530) 934-4295"}, image: "./assets/photos/j.png", itemTitleColor: "#4b0082", title: "Cindy Turner" }),
+    new OrgItemConfig({ id: 13, parent: 0, isVisible: true, description: "GM, Core File Solutions", context: { email: "melihous@name.com", phone: "(630) 887-1188" }, image: "./assets/photos/p.png", itemTitleColor: "#4b0082", title: "Melissa Houser" }),
+    new OrgItemConfig({ id: 14, parent: 0, isVisible: true, description: "GM, Software Server Solutions Group", context: { email: "abbilaws@name.com", phone: "530-322-6413" }, image: "./assets/photos/a.png", itemTitleColor: "#4b0082", title: "Abbie Lawson" }),
+    new OrgItemConfig({ id: 15, parent: 0, isVisible: true, description: "GM, Connected Systems Division", context: { email: "erneputn@name.com", phone: "(626) 831-0555" }, image: "./assets/photos/s.png", itemTitleColor: "#4b0082", title: "Ernest Putnam" }),
+    new OrgItemConfig({ id: 16, parent: 0, isVisible: true, description: "CFO, Platforms Products & Services", context: { email: "celecrum@name.com", phone: "(419) 578-6479" }, image: "./assets/photos/h.png", itemTitleColor: "#4b0082", title: "Celestina Crum" }),
+
+  
   ];
+
+  val(event:any){
+    console.log(event)
+  }
+
+
 }
